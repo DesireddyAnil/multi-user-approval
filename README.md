@@ -11,17 +11,17 @@ A Spring Boot application that implements a multi-user approval workflow system.
 
 ## Technologies Used
 
-- Java 11/17
+- Java 17
 - Spring Boot
 - Spring Security with JWT
 - Spring Data JPA
-- H2 Database
+- H2 Database (using in memory db for demo. it can be easily ported to postgreSQL)
 - Maven
 
 ## Setup and Running
 
 ### Prerequisites
-- Java 11 or higher
+- Java 17
 - Maven
 
 ### Running the Application
@@ -48,5 +48,5 @@ A Spring Boot application that implements a multi-user approval workflow system.
 - `POST /api/tasks/{id}/reject` - Reject a task
 
 ### Comments
-- `POST /api/tasks/{id}/comments` - Add a comment to a task
-- `GET /api/tasks/{id}/comments` - Get comments for a task
+- `POST /api/comments/task/{id}` - Add a comment to a task
+- `GET /api/comments/task/{id}` - Get comments for a task
